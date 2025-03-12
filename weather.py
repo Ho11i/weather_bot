@@ -2,8 +2,8 @@ import telebot
 import requests
 import json
 
-bot = telebot.TeleBot('7841264202:AAHvHOTMMevaQDePOPSmVdbraZTMAa77C14')
-API = '6bcb65a80bfb8e35ef3f14194bd82bab'
+bot = telebot.TeleBot('API YOUR TG BOT')
+API = 'API FOR WEBSITE OPEN WEATHER'
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name},\nНапиши назвагие своего города!')
